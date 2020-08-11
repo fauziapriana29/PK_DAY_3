@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+body {
+    counter-reset: section;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+}
+h1 {
+    color: lime;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+tbody > tr > td:first-child::before {
+    counter-increment: section;
+    content: counter(section);
+}
+img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+img:hover {
+    filter: hue-rotate(90deg);
+    opacity: 1;
+}
+.border {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.shadow {
+    box-shadow: 5px 5px 5px 5px black;
+}
